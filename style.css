@@ -1,0 +1,295 @@
+@font-face {
+  font-family: "CustomFont1";
+  src: url("./assets/d3tHnaQIAeqiE5hGcRw4mmgWYU.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CustomFont2";
+  src: url("./assets/vQyevYAyHtARFwPqUzQGpnDs.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "CustomFont3";
+  src: url("./assets/v2q8JTTTs7McDMSEhnxAIBqd0.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  font-family: "CustomFont2";
+  color: white;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.header .navbar {
+  height: 5vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  border-radius: 4px;
+}
+.header .navbar .logo {
+  display: none;
+}
+.header .navbar .navmenu {
+  width: 100%;
+  display: flex;
+  gap: 3em;
+  padding: 1.2em;
+  position: sticky;
+}
+.header .navbar .navmenu a {
+  text-decoration: none;
+  color: black;
+}
+.header .navbar .hamburger {
+  display: none;
+}
+.header .sideBar {
+  display: none;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  padding: 5rem 2rem 0rem 1.5rem;
+}
+.main .hero {
+  width: 100%;
+}
+.main .hero .hero-sec {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.main .hero .hero-sec h1 {
+  width: 100%;
+  font-size: 1em;
+  color: white;
+  font-family: "CustomFont2";
+  font-weight: 500;
+  text-align: center;
+  padding-top: 3rem;
+}
+.main .hero .hero-sec ul {
+  list-style: none;
+}
+.main .hero .hero-sec .example-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .hero .hero-sec .example-2 .icon-content {
+  margin: 0;
+  position: relative;
+  padding-bottom: 0.9rem;
+}
+.main .hero .hero-sec .example-2 .icon-content .tooltip {
+  position: absolute;
+  top: 100%;
+  right: 110%;
+  transform: translateY(200%);
+  color: #fff;
+  padding: 0;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.main .hero .hero-sec .example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.main .hero .hero-sec .example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.main .hero .hero-sec .example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
+}
+.main .hero .hero-sec .example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 12px;
+  height: 12dvh;
+}
+.main .hero .hero-sec .example-2 .icon-content a:hover {
+  color: white;
+}
+.main .hero .hero-sec .example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.main .hero .hero-sec .example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+.main .hero .hero-sec .example-2 .icon-content a[data-social=linkedin] .filled,
+.main .hero .hero-sec .example-2 .icon-content a[data-social=linkedin] ~ .tooltip {
+  background-color: #0274b3;
+}
+.main .hero .hero-sec .example-2 .icon-content a[data-social=github] .filled,
+.main .hero .hero-sec .example-2 .icon-content a[data-social=github] ~ .tooltip {
+  background-color: #24262a;
+}
+.main .hero .hero-sec .example-2 .icon-content a[data-social=instagram] .filled,
+.main .hero .hero-sec .example-2 .icon-content a[data-social=instagram] ~ .tooltip {
+  background: linear-gradient(45deg, #405de6, #5b51db, #b33ab4, #c135b4, #e1306c, #fd1f1f);
+}
+.main .hero .hero-sec .example-2 .icon-content a[data-social=youtube] .filled,
+.main .hero .hero-sec .example-2 .icon-content a[data-social=youtube] ~ .tooltip {
+  background-color: #ff0000;
+}
+@keyframes blinkCursor {
+  50% {
+    border-right-color: transparent;
+  }
+}
+.main .hero .loader-container {
+  width: 100%;
+  background-color: #000;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-family: "CustomFont2";
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3.5rem;
+}
+.main .hero p {
+  color: white;
+  font-size: 1.3em;
+  font-family: "CustomFont2";
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  padding: 0.4rem;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  font-weight: 100;
+}
+.main .hero .loader-text {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.2em solid green;
+  animation: blinkCursor 0.6s step-end infinite;
+}
+.main .works {
+  width: 100%;
+  margin-top: 20%;
+  text-align: center;
+}
+.main .works button {
+  background-color: black;
+  color: white;
+  border: 0px solid black;
+  font-size: 0.9em;
+}
+.main .about {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .header .navbar {
+    width: 51%;
+    height: 6vh;
+  }
+  .header .navbar .logo {
+    display: block;
+    width: 100%;
+  }
+  .header .navbar .logo a {
+    width: 100%;
+  }
+  .header .navbar .logo a img {
+    height: 5.6vh;
+    width: 3.5vw;
+    overflow: hidden;
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-left: 1rem;
+  }
+  .header .navbar .navmenu {
+    gap: 4rem;
+  }
+  .main .hero .hero-sec h1 {
+    font-size: 1.5em;
+    padding-top: 8rem;
+  }
+  .main .hero .hero-sec ul {
+    list-style: none;
+  }
+  .main .hero .hero-sec .example-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main .hero .hero-sec .example-2 .icon-content {
+    padding: 0.6rem;
+  }
+  .main .hero .hero-sec .example-2 .icon-content a {
+    width: 50px;
+    height: 50px;
+  }
+  .main .hero .hero-sec .example-2 .icon-content a svg {
+    width: 30px;
+    height: 30px;
+  }
+  .main .hero .loader-container {
+    display: block;
+    text-align: center;
+    padding: 6rem;
+    padding-top: 0;
+  }
+  .main .hero .loader-container p {
+    font-size: 3.9rem;
+    display: inline;
+  }
+  .main .hero .loader-container span {
+    font-size: 3.9rem;
+    text-align: start;
+  }
+  .main .hero p {
+    font-size: 2em;
+    word-spacing: 0.1rem;
+  }
+  .main .works {
+    margin-top: 5%;
+  }
+}/*# sourceMappingURL=style.css.map */
