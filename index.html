@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a8bac977b5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="header">
         <div class="navbar">
             <div class="logo">
-                <a href="logo"><img src="./assets/rs.svg" alt=""></a>
+                <a href="#home"><img src="./assets/rs_white_text.png" alt=""></a>
             </div>
             <div class="navmenu">
-                <a href="Home">Home</a>
-                <a href="Works">About</a>
-                <a href="Why-me">Works</a>
-                <a href="Contact">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#project">Project</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
             </div>
             <div class="hamburger">
                 <button onclick=showSideBar() for="checkbox" class="toggle">
@@ -30,15 +31,14 @@
             <a href="Contact">Contact</a>
         </div>
     </div>
-    <div class="main">
-        
+    <div class="main" id="home">
         <div class="hero">
             <div class="hero-sec">
                 <h1>Hey! My name is Rajat Srivastav!</h1>
                 <ul class="example-2">
                     <li class="icon-content">
                     <a
-                        href="https://linkedin.com/"
+                        href="https://www.linkedin.com/in/rajatrsrivastav/"
                         aria-label="LinkedIn"
                         data-social="linkedin"
                     >
@@ -61,7 +61,7 @@
                     <div class="tooltip"></div>
                     </li>
                     <li class="icon-content">
-                    <a href="https://www.github.com/" aria-label="GitHub" data-social="github">
+                    <a href="https://github.com/rajatrsrivastav" aria-label="GitHub" data-social="github">
                         <div class="filled"></div>
                         <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -103,14 +103,17 @@
             </div> 
           <div class="loader-container">
             <p class="text-line">
-            <p>I am </p><span class="loader-text">Loading...</span>
+            <span class="loader-text">Loading...</span>
             </p>
           </div>
-          <p>Frontend developer passionate about crafting clean, responsive, and engaging web experiences using React, Tailwind, and JavaScript.
+          <p>
+            Frontend developer passionate about crafting clean, responsive, and engaging web experiences using React, Sass, and JavaScript.
+          </p>
+          
         </p>
         </div>
         <div class="works">
-            <button>See my Work <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" 
+            <button><a href="#project">See my Work</a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" 
                 style="user-select: none; width: 1.5rem; height: 1.5rem; display: inline-block; 
                 fill: white; color: white; flex-shrink: 0;">
              <g weight="light">
@@ -119,18 +122,109 @@
            </svg>           
            </button>
         </div>
-        <div class="about">
-            <div class="project">
-                <div class="details">
-                    <img src="" alt="">
-                </div>
-                <div class="details"></div>
-                <div class="details"></div>
-                <div class="details"></div>
+      </div>
+      <div class="about" id="project">
+        <div class="text">
+          <h1>View my projects</h1>
+          <p>My skill reflects itself! Premier style in each distinct task</p>
+        </div>
+        <div class="project">
+            <div class="details">
+                <a href="https://lend-mate.vercel.app/"><img src="./assets/Screenshot 2025-04-16 at 10.20.49 PM.png" alt=""></a>
+                <p>Lendmate</p>
+                <a href="https://github.com/rajatrsrivastav/LendMate">🔗Repo Link</a>
             </div>
+            <div class="details">
+              <a href="https://rajatrsrivastav.github.io/FASHIONWERK-Project/"><img src="./assets/Screenshot 2025-04-09 at 9.11.29 AM.png" alt=""></a>
+              <p>FASHIONWERK</p>
+                <a href="https://github.com/rajatrsrivastav/FASHIONWERK-Project">🔗Repo Link</a>
+            </div>
+            <div class="details">
+              <a href="https://rajatrsrivastav.github.io/Cretive-Studio-page/"><img src="./assets/Screenshot 2025-04-16 at 10.11.23 PM.png" alt=""></a>
+              <p>Cretive-Studio-page</p>
+                <a href="">🔗Repo Link</a>
+            </div>
+            <div class="details">
+              <a href=""><img src="./assets/Screenshot 2025-04-16 at 10.43.35 PM.png" alt=""></a>
+              <p>FASHIONWERK</p>
+                <a href="">🔗Repo Link</a>
+            </div>
+            <p class="more">For more Such Projects <a href="https://github.com/rajatrsrivastav?tab=repositories">Click Here</a></p>
+        </div>
+    </div>
+    <div class="skills" id="skills">
+      <div class="text">
+        <h1>Skills</h1>
+        <p>Technologies I've been working with</p>
+      </div>
+       <div class="skills-box">
+        <div class="box">
+          <img src="./assets/pngwing.com.png" alt="">
+        </div>
+        <div class="box">
+          <img src="./assets/pngwing.com (1).png" alt="">
+        </div>
+        <div class="box">
+          <img src="./assets/pngwing.com (2).png" alt="">
+        </div>
+        <div class="box">
+          <img src="./assets/pngwing.com (3).png" alt="">
+        </div>
+        <div class="box">
+          <img src="./assets/pngwing.com (4).png" alt="">
+        </div>
+        <div class="box">
+          <img src="./assets/node-js-logo-11609370285yeitc9c5d9.png" alt="">
+        </div>
+        <div class="box">
+          <img src="./assets/images.jpeg" alt="">
+        </div>
+        <div class="box">
+          <img src="./assets/images.png" alt="">
+        </div>
+        <div class="box">
+          <img src="./assets/responsive-design-solid-icon-design-illustration-design-and-development-symbol-on-white-background-eps-10-file-vector.jpg" alt="">
+        </div>
+        <div class="box">
+          ,<img src="./assets/nextjs-icon-2048x1234-pqycciiu.png" alt="">
+        </div>
+       </div>
+    </div>
+    <div class="contact" id="contact">
+      <div class="text">
+        <h1>
+          Get In Touch
+        </h1>
+        <p>I'm currently available for freelance work and open to new opportunities. If you have a project that needs some creative touch, or if you just want to say hi, feel free to reach out!</p>
+      </div>
+      <div class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </div>
+      <div class="contact-details">
+        <div class="email">
+          <img src="./assets/pngwing.com (6).png" alt="">
+          <a href="mailto:rajatrsrivastav810@gmail.com">rajatrsrivastav810@gmail.com
+          </a>
+        </div>
+        <div class="phone">
+          <img src="./assets/pngwing.com (5).png" alt="">
+          <a href="tel:+918108561145">+91 8108561145</a>
         </div>
       </div>
-        
+    </div>
+    <div class="hr"></div>
+    <div class="footer">
+      <p>&copy; 2025 Rajat Srivastav. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#project">Project</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+    </div>
         <!-- // <p>
         // function showSideBar(){
         //     const sideBar = document.querySelector('.sideBar');
@@ -138,13 +232,14 @@
         // }
         // </p>\ -->
 
-        <script>
+    <script>
         const roles = [
-            "curious Student",
-            "Frontend Developer",
-            "React.js Developer",
-            "UI/UX Enthusiast",
-            "JavaScript Coder",
+        "I build responsive websites",
+        "I write clean code",
+        "I turn designs into code",
+        "I leverage JavaScript for dynamic features",
+        "I craft interactive React Websites",
+        "I contribute to open source"
         ];
 
         const textElement = document.querySelector(".loader-text");
@@ -183,6 +278,6 @@
   document.addEventListener("DOMContentLoaded", () => {
     typeAndDelete();
   });
-</script>
+    </script>
 </body>
 </html>

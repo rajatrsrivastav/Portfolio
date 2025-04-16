@@ -1,4 +1,25 @@
 @font-face {
+  font-family: "CustomFont2";
+  src: url("./assets/vQyevYAyHtARFwPqUzQGpnDs.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  font-family: "CustomFont2";
+  color: white;
+  scroll-behavior: smooth;
+}
+
+@font-face {
   font-family: "CustomFont1";
   src: url("./assets/d3tHnaQIAeqiE5hGcRw4mmgWYU.woff2") format("woff2");
   font-weight: normal;
@@ -37,12 +58,13 @@ html, body {
 }
 .header .navbar {
   height: 5vh;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
   border-radius: 4px;
+  border: 1px solid white;
 }
 .header .navbar .logo {
   display: none;
@@ -56,7 +78,7 @@ html, body {
 }
 .header .navbar .navmenu a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 .header .navbar .hamburger {
   display: none;
@@ -191,6 +213,9 @@ html, body {
   flex-direction: column;
   padding-bottom: 3.5rem;
 }
+.main .hero .loader-container span {
+  font-size: 0.6em;
+}
 .main .hero p {
   color: white;
   font-size: 1.3em;
@@ -216,18 +241,229 @@ html, body {
 }
 .main .works button {
   background-color: black;
-  color: white;
   border: 0px solid black;
-  font-size: 0.9em;
 }
-.main .about {
+.main .works button a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  text-align: start;
+}
+
+.about {
   width: 100%;
+  height: auto;
+  padding: 0rem 2rem 0rem 1.5rem;
+  margin-top: 10rem;
+}
+.about .text {
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+.about .text h1 {
+  font-size: 2.1em;
+  font-weight: 100;
+  margin-bottom: 1.2rem;
+}
+.about .text p {
+  font-size: 0.9em;
+  font-weight: 100;
+  color: grey;
+  margin-bottom: 1.2rem;
+}
+.about .project {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.about .project a {
+  color: rgb(198, 190, 190);
+  text-decoration: none;
+}
+.about .project .details {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.about .project .details img {
+  width: 100%;
+  height: 100%;
+}
+.about .project .more {
+  margin-top: 2rem;
+  width: 110%;
+  text-align: center;
+}
+
+.skills {
+  width: 100%;
+  height: auto;
+  padding: 0rem 2rem 0rem 1.5rem;
+  margin-top: 3rem;
+}
+.skills .text {
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+.skills .text h1 {
+  font-size: 2.1em;
+  font-weight: 100;
+  margin-bottom: 1.2rem;
+}
+.skills .text p {
+  font-size: 0.9em;
+  font-weight: 100;
+  color: grey;
+  margin-bottom: 1.2rem;
+}
+.skills .skills-box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 0rem 1rem;
+}
+.skills .skills-box .box {
+  border-radius: 10px;
+  background-color: white;
+  width: 100%;
+  height: 5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills .skills-box img {
+  width: 40%;
+}
+
+.contact {
+  width: 100%;
+  height: auto;
+  padding: 0rem 2rem 0rem 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.contact .text {
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+.contact .text h1 {
+  font-size: 2.1em;
+  font-weight: 100;
+  margin-bottom: 1.2rem;
+}
+.contact .text p {
+  font-size: 0.9em;
+  font-weight: 100;
+  color: grey;
+  margin-bottom: 1.2rem;
+}
+.contact .contact-form {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.contact .contact-form input {
+  display: block;
+  width: 100%;
+  height: 2.3rem;
+  font-size: 1rem;
+  font-family: "CustomFont2";
+  font-weight: 900;
+  border-radius: 5px;
+  margin-top: 1rem;
+  background-color: black;
+  padding: 1rem;
+}
+.contact .contact-form textarea {
+  display: block;
+  width: 100%;
+  height: 5rem;
+  font-size: 1rem;
+  font-family: "CustomFont2";
+  font-weight: 900;
+  border-radius: 5px;
+  margin-top: 1rem;
+  background-color: black;
+  padding: 1rem;
+}
+.contact .contact-form button {
+  margin-top: 1rem;
+  display: block;
+  width: 100%;
+  height: 2.3rem;
+  font-size: 1rem;
+  font-family: "CustomFont1";
+  font-weight: 900;
+  border-radius: 5px;
+}
+.contact .contact-details {
+  width: 100%;
+}
+.contact .contact-details .email {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.contact .contact-details .email a {
+  text-decoration: none;
+  color: white;
+}
+.contact .contact-details .email img {
+  width: 7%;
+}
+.contact .contact-details .phone {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.contact .contact-details .phone a {
+  text-decoration: none;
+  color: white;
+}
+.contact .contact-details .phone img {
+  width: 7%;
+}
+
+.hr {
+  width: 100%;
+  height: 0.1px;
+  background-color: rgb(139, 139, 139);
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  color: rgb(139, 139, 139);
+}
+.footer .footer-links {
+  margin-bottom: 1.5rem;
+}
+.footer .footer-links a {
+  text-decoration: none;
+  font-size: 0.9em;
+  margin-left: 0.9rem;
+  color: rgb(139, 139, 139);
 }
 
 @media (min-width: 1024px) {
   .header .navbar {
     width: 51%;
     height: 6vh;
+    position: fixed;
+    border-radius: 10px;
   }
   .header .navbar .logo {
     display: block;
@@ -259,27 +495,24 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: fixed;
   }
   .main .hero .hero-sec .example-2 .icon-content {
     padding: 0.6rem;
   }
   .main .hero .hero-sec .example-2 .icon-content a {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
   }
   .main .hero .hero-sec .example-2 .icon-content a svg {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
   }
   .main .hero .loader-container {
     display: block;
     text-align: center;
     padding: 6rem;
     padding-top: 0;
-  }
-  .main .hero .loader-container p {
-    font-size: 3.9rem;
-    display: inline;
   }
   .main .hero .loader-container span {
     font-size: 3.9rem;
@@ -291,5 +524,90 @@ html, body {
   }
   .main .works {
     margin-top: 5%;
+  }
+  .about {
+    margin-top: 11rem;
+  }
+  .about .text {
+    padding: 4rem;
+    padding-bottom: 0rem;
+  }
+  .about .text h1 {
+    font-size: 3em;
+  }
+  .about .project {
+    flex-direction: row;
+  }
+  .about .project .details {
+    width: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 3rem;
+  }
+  .about .project img {
+    width: 10%;
+    border-radius: 5px;
+  }
+  .skills {
+    margin-top: 5rem;
+  }
+  .skills .text {
+    padding: 4rem;
+    padding-bottom: 0rem;
+  }
+  .skills .text h1 {
+    font-size: 3em;
+  }
+  .skills .skills-box {
+    padding: 3rem;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .skills .skills-box .box {
+    background-color: white;
+    height: auto;
+    border-radius: 5px;
+  }
+  .skills .skills-box .box img {
+    width: 45%;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    padding: 4rem;
+  }
+  .contact .text h1 {
+    font-size: 3em;
+  }
+  .contact .contact-form {
+    width: 50%;
+  }
+  .contact .contact-form input {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .contact .contact-form button {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .contact .contact-details {
+    width: 50%;
+    display: flex;
+  }
+  .contact .contact-details .phone {
+    padding-left: 10rem;
+  }
+  .contact .contact-details .phone img {
+    width: 5%;
+    height: 50%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
